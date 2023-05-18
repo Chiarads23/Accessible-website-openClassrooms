@@ -1,0 +1,122 @@
+@import "../styles/variables";
+@import "../styles//mixins";
+
+header {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 8px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../assets/header-bg.jpg");
+
+  color: $white;
+
+  .headerSvg {
+
+    svg {
+      color: $black;
+      background-color: $batman-blue;
+      width: 4rem;
+      height: 4rem;
+      border-radius: 50%;
+      padding: 10%;
+      transition: 240ms;
+      &:hover {
+        color: $batman-blue;
+        background-color: rgb(4, 4, 4);
+        border: 2px solid $batman-blue;
+      }
+    }
+  }
+
+  nav {
+
+    ul {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+
+      a {
+        text-decoration: none;
+        color: $white;
+        border-left: 1px solid $white;
+        padding-left: 8px;
+        &:hover {
+          font-weight: 900;
+          border-left: 3px solid $white;
+        }
+      }
+    }
+  }
+
+  form {
+    border: 1px solid $white;
+    background-color: rgb(4, 4, 4);
+    display: flex;
+    gap: 8px;
+    padding: 4px;
+    border-radius: 8px;
+    align-self: self-start;
+    &:hover {
+      border: 3px solid $white;
+    }
+
+    .srOnly {
+      @include srOnly;
+    }
+
+    input {
+      background-color: rgb(4, 4, 4);
+      outline: none;
+      color: $white;
+      border: none;
+    }
+  }
+
+  .dropdownMenu {
+    display: flex;
+    flex-direction: column;
+    align-self: self-start;
+    align-items: baseline;
+    gap: 8px;
+
+    .menuHeader {
+      display: flex;
+
+      p {
+        padding: 0 8px 2px;
+        border-radius: 4px;
+        &:hover {
+          border: 1px solid $white;
+        }
+
+        svg {
+          padding-left: 8px;
+        }
+      }
+    }
+
+    .dropdownList {
+      // display: none;
+      border: 2px solid $white-shadow;
+      border-radius: 4px;
+      padding: 0 8px;
+      background-color: $grey;
+
+      li {
+        list-style: none;
+        border-bottom: 1px solid $white-shadow;
+
+        a {
+          font-size: 12px;
+        }
+      }
+    }
+    
+    a {
+      text-decoration: none;
+      color: $white;
+    }
+  }
+}

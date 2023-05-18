@@ -1,0 +1,63 @@
+@import "../styles/variables";
+@import "../styles//mixins";
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../assets//footer-bg.jpg");
+  color: $white;
+  justify-content: space-around;
+
+  nav {
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+
+    ul {
+
+      h3 {
+        margin: 2rem 0 2rem;
+      }
+
+      li {
+        list-style: none;
+        padding-bottom: 8px;
+
+        a {
+          text-decoration: none;
+          color: $white;
+          font-size: 14px;
+        }
+      }
+
+      .socialLinks {
+        display: flex;
+        gap: 1rem;
+
+        span {
+          @include srOnly;
+        }
+        
+        svg {
+          color: rgb(4, 4, 4);
+          background-color: $white;
+          border-radius: 50%;
+          width: 40px;
+          height: 40px;
+          padding: 8px;
+        }
+      }
+    }
+  }
+
+  .partners {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h3 {
+      margin: 2rem 0 1rem;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+@import "../styles/variables";
+
+main {
+  display: flex;
+
+  section {
+    padding: 1rem;
+    margin: 0 2rem 0 2rem;
+    max-width: 60%;
+
+    p {
+      padding-bottom: 1rem;
+    }
+
+    a {
+      color: $batman-blue;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    
+    h1,
+    h2 {
+      padding-top: 2rem;
+      color: $black;
+    }
+  }
+
+  aside {
+    background-color: $batman-blue;
+    width: 100%;
+    position: relative;
+
+    svg {
+      width: 200px;
+      height: 200px;
+      left: -3.2rem;
+      position: absolute;
+      top: 1rem;
+    }
+  }
+}
