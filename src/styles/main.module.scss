@@ -2,11 +2,11 @@
 
 main {
   display: flex;
+  flex-direction: column;
 
   section {
     padding: 1rem;
     margin: 0 2rem 0 2rem;
-    max-width: 60%;
 
     p {
       padding-bottom: 1rem;
@@ -17,7 +17,7 @@ main {
       font-weight: bold;
       text-decoration: none;
     }
-    
+
     h1,
     h2 {
       padding-top: 2rem;
@@ -26,16 +26,63 @@ main {
   }
 
   aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 1rem;
     background-color: $batman-blue;
-    width: 100%;
-    position: relative;
-
+    text-transform: uppercase;
+    font-size: small;
     svg {
       width: 200px;
       height: 200px;
-      left: -3.2rem;
-      position: absolute;
-      top: 1rem;
+    }
+    table {
+      margin: 8px;
+      color: $white;
+      text-align: center;
+      border: 2px solid $white-shadow;
+      border-radius: 4px;
+      padding: 0 8px;
+      background-color: $blue;
+      th {
+        color: $black;
+      }
+    tbody{
+      tr{
+       
+       td{ padding: 4px 0 4px;  
+         border-bottom: 1px solid $white-shadow;
+       
+      }
+    }
+     
+    }
+  }
+}
+}
+@media only screen and (min-width: 600px) {
+  main {
+    display: flex;
+    flex-direction: row;
+    section {
+      max-width: 60%;
+    }
+    aside {
+      width: 100%;
+      position: relative;
+     
+      svg {
+        left: -3.2rem;
+        position: absolute;
+        top: 1rem;
+      }
+      table {
+        position: absolute;
+        bottom: 1rem;
+        max-width: 90%;
+      }
     }
   }
 }

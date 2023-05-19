@@ -57,6 +57,68 @@ function Main() {
       </section>
       <aside>
         <GiBatMask />
+        <table>
+          <caption><h3>Batman actors ranked</h3></caption>
+          <thead>
+            <tr>
+              <th scope="col">Position</th>
+              <th scope="col">Name</th>
+              <th scope="col">Year of movie</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Michael Keaton</td>
+              <td>1989 - 1992 - 2023</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Kevin Conroy(voice)</td>
+              <td>1992 - present</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Christian Bale</td>
+              <td>2005 - 2012</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Adam West</td>
+              <td>1966 - 1968</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Ben Affleck</td>
+              <td>2016 - 2017</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Robert Pattinson</td>
+              <td>2022</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Val Kilmer</td>
+              <td>1995</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>Will Arnett(voice)</td>
+              <td>2014 - 2019</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>George Clooney</td>
+              <td>1997</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>Keanu Reeves</td>
+              <td>2022</td>
+            </tr>
+          </tbody>
+        </table>
       </aside>
     </main>
   );

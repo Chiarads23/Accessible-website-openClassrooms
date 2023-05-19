@@ -36,11 +36,11 @@ function Footer() {
           </li>
           <li className={styles.socialLinks}>
             <a href="#">
-              <span class="sr-only">Twitter</span>
+              <span className={styles.srOnly}>Twitter</span>
               <FaTwitter />
             </a>
             <a href="#">
-              <span class="sr-only">Facebook</span>
+              <span className={styles.srOnly}>Facebook</span>
               <FaFacebookF />
             </a>
             <a href="#">
@@ -51,7 +51,7 @@ function Footer() {
         </ul>
       </nav>
       <div className={styles.partners}>
-        <h3 class="footer-title">Partners</h3>
+        <h3 className={styles.footerTitle}>Partners</h3>
         <img src={img} alt="City of Gotham Police Department logo" />
       </div>
     </footer>
