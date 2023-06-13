@@ -61,7 +61,7 @@ function Main() {
           <caption><h3>Batman actors ranked</h3></caption>
           <thead>
             <tr>
-              <th scope="col">Position</th>
+              <th scope="col">Rank</th>
               <th scope="col">Name</th>
               <th scope="col">Year of movie</th>
             </tr>

@@ -26,6 +26,7 @@ main {
   }
 
   aside {
+    box-shadow: -3px 5px 10px rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -35,6 +36,7 @@ main {
     text-transform: uppercase;
     font-size: small;
     svg {
+ 
       width: 200px;
       height: 200px;
     }

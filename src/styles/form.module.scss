@@ -1,0 +1,28 @@
+@import "../styles/variables";
+@import "../styles//mixins";
+
+form {
+  padding: 1rem 2rem;
+  background-color: $black;
+  color: $white;
+  fieldset {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    gap: 1rem;
+    legend {
+      font-size: 1.5em;
+      color: $new-blue;
+    }
+    button {
+        @include buttonLayout;
+        &:hover{@include Hover;}
+        &:active{@include Active}
+    }
+
+    .other {
+        display: flex;
+        flex-direction: column;
+    }
+  }
+}
