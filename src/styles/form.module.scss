@@ -19,10 +19,24 @@ form {
         &:hover{@include Hover;}
         &:active{@include Active}
     }
+input {
+  width: fit-content;
+  padding: 4px 8px;
+  border: 3px solid $new-blue;
+   border-radius: 4px;
+   outline: none;
+}
 
+label {
+  justify-self:self-start;
+}
     .other {
         display: flex;
         flex-direction: column;
+        textarea{
+          border: 3px solid $new-blue;
+          border-radius: 8px;
+        }
     }
   }
 }

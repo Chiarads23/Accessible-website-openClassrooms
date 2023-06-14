@@ -25,7 +25,7 @@
 @mixin buttonLayout (
     $width: 16rem,
     $cursor: pointer,
-    $border: none,
+    $border: 4px solid $batman-blue,
     $outline: none,
     $font-weight: bold,
     $background-color: $white,
@@ -51,21 +51,19 @@
 
 @mixin Hover (
     $background-color: $new-blue,
-    $border: 1px solid $white,
+    $border: 3px solid $white,
     $color: $white,
-    $box-shadow: inset 3px 5px 10px $black-shadow,
     ) {
         background-color: $background-color;
         border: $border;
         color: $color;
-        box-shadow: $box-shadow;
     }
 
 
  @mixin Active (
       $color: $black,
       $background-color: $batman-blue,
-      $box-shadow:  3px 5px 10px $white-shadow,
+      $box-shadow:  inset 3px 5px 10px $black-shadow,
     ) {
         color: $color;
         background-color: $background-color;
